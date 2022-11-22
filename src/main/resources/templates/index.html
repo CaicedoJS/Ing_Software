@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="/styleIndex.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="row d-flex justify-content-center">
+			<div class="col-md-9">
+				<div class="card p-4 mt-3">
+					<h3 class="heading mt-5 text-center">Hola! ¿Cómo podemos ayudarte?</h3>
+					
+					<div class="row mt-1 g-2 px-1 mb-5">
+						<div class="col-md-2">
+							<div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="https://cdn-icons-png.flaticon.com/128/1570/1570102.png" width="50">
+								<div class="text-center mg-text"> <a class="nav-link" th:href="@{/personas/index}"></a> <span class="mg-text" >Administración Personas</span> </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="https://cdn-icons-png.flaticon.com/128/2832/2832673.png" width="50">
+								<div class="text-center mg-text"> <a class="nav-link" th:href="@{/libros/index}"></a> <span class="mg-text">Administración de Libros</span> </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="https://cdn-icons-png.flaticon.com/128/3502/3502685.png" width="50">
+								<div class="text-center mg-text">  <a class="nav-link" th:href="@{/categorias/index}"></a><span class="mg-text" > Categorización de Libros</span> </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="https://cdn-icons-png.flaticon.com/128/3022/3022148.png" width="50">
+								<div class="text-center mg-text"> <a class="nav-link" th:href="@{/estados/index}"></a><span class="mg-text">Administracion de Estados</span> </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="https://cdn-icons-png.flaticon.com/128/1769/1769328.png" width="50">
+								<div class="text-center mg-text"> <a class="nav-link" th:href="@{/roles/index}"></a><span class="mg-text">Administración de Roles</span> </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="https://cdn-icons-png.flaticon.com/128/8632/8632717.png" width="50">
+								<div class="text-center mg-text"> <a class="nav-link" th:href="@{/solicitudes/index}"></a> <span class="mg-text">Administración de Solicitud</span> </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="https://cdn-icons-png.flaticon.com/512/264/264745.png" width="50">
+								<div class="text-center mg-text"><a class="nav-link" th:href="@{/solicitudes/crear}"></a> <span class="mg-text">Solicitar o Reservar Libro</span> </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="https://cdn-icons-png.flaticon.com/128/3586/3586953.png" width="50">
+								<div class="text-center mg-text"><a class="nav-link" th:href="@{/solicitudes/buscar}"></a><span class="mg-text">Devolver Libro</span> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
