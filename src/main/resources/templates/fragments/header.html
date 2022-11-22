@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/styles.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<nav th:fragment="barra-menu" class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" th:href="@{/}" href="#">Home</a>
+        </li>
+        <li class="nav-item" sec:authorize="hasAnyAuthority('Administrador')">
+          <a class="nav-link" href="#" th:href="@{/personas/index}">Personas</a>
+        </li>
+        <li class="nav-item" sec:authorize="hasAnyAuthority('Administrador')">
+          <a class="nav-link" href="#" th:href="@{/roles/index}">Roles</a>
+        </li>
+        <li class="nav-item" sec:authorize="hasAnyAuthority('Administrador'">
+          <a class="nav-link" href="#" th:href="@{/categorias/index}">Categorias</a>
+        </li>
+        <li class="nav-item" sec:authorize="hasAnyAuthority('Administrador'">
+          <a class="nav-link" href="#" th:href="@{/libros/index}">Libros</a>
+        </li>
+        <li class="nav-item" sec:authorize="hasAnyAuthority('Administrador'">
+          <a class="nav-link" href="#" th:href="@{/estados/index}">Estados</a>
+        </li>
+        <li class="nav-item" sec:authorize="hasAnyAuthority('Administrador','Cliente')">
+          <a class="nav-link" href="#" th:href="@{/solicitudes/crear}">Solicitudes</a>
+        </li>
+        <div sec:authorize="isAuthenticated()")>
+        	<span th:if="${session.usuario!=null}" th:text="'Bienvenido: ' + ${session.usuario.username} "></span>
+        	<a class="btn btn-primary" th:href="@{/logout}">Salir</a>
+        </div>
+         <ul class="navbar navbar-right mx4"> </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
